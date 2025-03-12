@@ -1,2 +1,3 @@
 # LY_HERO_TEST
 华中科技大学狼牙战队英雄自瞄改迈德相机驱动
+info about this project
