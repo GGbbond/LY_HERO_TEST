@@ -11,7 +11,7 @@
 #include "Log.h"
 #include "SerialPort.h"
 // #include "GxCamera.h"
-#include "CameraApi.h"
+#include "MVcamera.h"
 #include "Thread.h"
 
 //#define TIMEIT
@@ -104,7 +104,7 @@ namespace ly
         //        int _id;
     };
 
-    class MVcamera::open : public VideoCapture
+    class MVcamera : public VideoCapture
     {
         public:
             explicit MVcamera();
