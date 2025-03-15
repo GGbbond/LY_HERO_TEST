@@ -28,6 +28,7 @@ namespace ly
     enum CameraType
     {
         DaHen,              // 大恒
+        MV,                 // 迈德威视
         Video,              // 视频 debug
         Picture,            // 图片 debug
     };
@@ -104,11 +105,11 @@ namespace ly
         //        int _id;
     };
 
-    class MVcamera : public VideoCapture
+    class MVCamera : public VideoCapture
     {
         public:
-            explicit MVcamera();
-            ~MVcamera();
+            explicit MVCamera();
+            ~MVCamera();
             void startCapture(Params_ToVideo &) override;
             void open() override;
 

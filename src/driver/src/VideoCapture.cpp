@@ -30,6 +30,9 @@ void ly::VideoCapture::chooseCameraType(ly::VideoCapture *& video) {
         case Picture:                       // 2: 用本地图片
             video = new NativePicture();
             break;
+        case MV:
+            video = new MVCamera();
+            break;
         default:
             video = new NativeVideo();
             break;

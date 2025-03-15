@@ -4,6 +4,11 @@
 
 #include "CameraApi.h"
 
+#include "opencv2/core/core.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include <stdio.h>
+
+
 unsigned char           * g_pRgbBuffer;     //处理后数据缓存区
 
 namespace ly {
@@ -26,7 +31,7 @@ namespace ly {
 
             void OpenDevice();
 
-            void GetBuffer();
+            cv::Mat GetBuffer();
 
 
 
